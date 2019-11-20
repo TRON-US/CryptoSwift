@@ -93,6 +93,10 @@ extension Data {
     Array(self)
   }
 
+  public var bytesT: Array<UInt8> {
+    Array(self)
+  }
+
   public func toHexString() -> String {
     self.bytes.toHexString()
   }
