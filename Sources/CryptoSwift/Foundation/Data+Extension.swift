@@ -88,10 +88,6 @@ extension Data {
   public var bytes: Array<UInt8> {
     Array(self)
   }
-    
-  public var bytesT: Array<UInt8> {
-    Array(self)
-  }
 
   public func toHexString() -> String {
     self.bytes.toHexString()
