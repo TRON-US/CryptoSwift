@@ -19,6 +19,10 @@ extension String {
     data(using: String.Encoding.utf8, allowLossyConversion: true)?.bytes ?? Array(utf8)
   }
 
+  public var bytesT: Array<UInt8> {
+    data(using: String.Encoding.utf8, allowLossyConversion: true)?.bytes ?? Array(utf8)
+  }
+    
   public func md5() -> String {
     self.bytes.md5().toHexString()
   }

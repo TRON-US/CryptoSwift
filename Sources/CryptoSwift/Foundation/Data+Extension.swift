@@ -42,6 +42,10 @@ extension Data {
   public func sha256() -> Data {
     Data( Digest.sha256(bytes))
   }
+    
+  public func sha256T() -> Data {
+    Data( Digest.sha256(bytes))
+  }
 
   public func sha384() -> Data {
     Data( Digest.sha384(bytes))
